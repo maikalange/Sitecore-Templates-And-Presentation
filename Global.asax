@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Templates_And_Presentation.MvcApplication" Language="C#" %>
+﻿<%@ Application Inherits="Sitecore.Web.Application" Language="C#" %>

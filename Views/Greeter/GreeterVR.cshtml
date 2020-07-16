@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+<div class="container">
+    @Html.Sitecore().DynamicPlaceholder("nasa")
+    <div class="card well @Model.Rendering.Parameters["CssClass"]" style="width:400px">
+        @Html.Sitecore().Field("greetingImage", new { @class = "card-img-top img-responsive", mw = 400, mh = 300 })
+        <div class="card-body">
+            <h4 class="card-title">Sitecore.Education</h4>
+            <p class="card-text">@Html.Sitecore().Field("message")</p>
+        </div>
+    </div>
+</div>
